@@ -4,94 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="busca.css">
     <title>Buscador</title>
 </head>
-<style>
-    body {
-        margin: 0px;
-        font-family: 'Muli', sans-serif;
-        background-color: #8F57FD;
-    }
 
-    /** styles header*/
-    .header{
-        background-color: #8F57FD;
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header__img {
-        width: 200px;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-    .header__menu {
-        margin-right: 30px;
-    }
-    .header__menu ul {
-        display: none;
-        list-style: none;
-        padding: 0px;
-        position: absolute;
-        width: 100px;
-        text-align: right;
-        margin: 0px 0px 0px -14px;
-    }
-    /** esto es para que se muestra la lista cuando pasamos el mouse*/
-    .header__menu:hover ul, ul:hover {
-        display: block
-    }
-    .header__menu li {
-        margin: 10px 0px;
-    }
-    .header__menu li a {
-        color: white;
-        text-decoration: none;
-    }
-    .header__menu li a:hover {
-        text-decoration: underline;
-    }
-    .header__menu--profile {
-        margin-right: 8px;
-        display: flex;
-        align-items: center;
-    }
-    .header__menu--profile img {
-        margin-right: 8px;
-        width: 40px;
-        height: 40px;
-    }
-    .header__menu--profile p {
-        margin: 0px;
-        color: white
-    }
-    /** styles main*/
-    .main {
-        height: 300px;
-    }
-    .main__title {
-        color: white;
-        font-size: 25px;
-    }
-    .input {
-        background-color: rgba(255, 255, 255, 0.1);
-        border: 2px solid white;
-        border-radius: 100px;
-        color: white;
-        font-family: 'Muli', sans-serif;
-        font-size: 16px;
-        height: 50px;
-        padding: 0px 20px;
-        width: 70%;
-        outline: 0px;
-    }
-    ::placeholder {
-        color: white;
-    }
-</style>
 <body>
+
     <header class="header">
 
         <img class="header__img" src="../Icon/logo_platzi.png" alt="hola">
@@ -119,6 +37,663 @@
         <input class="input" type="text" placeholder="Buscar...">
 
     </section>
+
+    
+
+    <section class="carousel">
+
+        <h2 class="title">Mi Lista:</h2>
+
+        <div class="carousel__container">
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="../img/img.jpg" alt="people" />
+  
+            <div class="carousel-item__details">
+              <div>
+                <img src="../Icon/play.svg" alt="Button play" />
+                <img src="../Icon/plus.svg" alt="Button plus" />
+              </div>
+  
+              <p class="carousel-item__details--title">Sahara</p>
+              <p class="carousel-item__details--subtitle">
+                Listennig the new Song: Sahara
+              </p>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="../img/img1.jpg" alt="people" />
+  
+            <div class="carousel-item__details">
+              <div>
+                <img src="../Icon/play.svg" alt="Button play" />
+                <img src="../Icon/plus.svg" alt="Button plus" />
+              </div>
+  
+              <p class="carousel-item__details--title">Sahara</p>
+              <p class="carousel-item__details--subtitle">
+                Listennig the new Song: Sahara
+              </p>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img2.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img3.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img4.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img5.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img6.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img7.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img8.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img9.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img10.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img11.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img12.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+        </div>
+    </section>
+
+    <section class="carousel">
+
+        <h2 class="title">Tendencias:</h2>
+
+        <div class="carousel__container">
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="../img/img.jpg" alt="people" />
+  
+            <div class="carousel-item__details">
+              <div>
+                <img src="../Icon/play.svg" alt="Button play" />
+                <img src="../Icon/plus.svg" alt="Button plus" />
+              </div>
+  
+              <p class="carousel-item__details--title">Sahara</p>
+              <p class="carousel-item__details--subtitle">
+                Listennig the new Song: Sahara
+              </p>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="../img/img1.jpg" alt="people" />
+  
+            <div class="carousel-item__details">
+              <div>
+                <img src="../Icon/play.svg" alt="Button play" />
+                <img src="../Icon/plus.svg" alt="Button plus" />
+              </div>
+  
+              <p class="carousel-item__details--title">Sahara</p>
+              <p class="carousel-item__details--subtitle">
+                Listennig the new Song: Sahara
+              </p>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img2.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img3.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img4.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img5.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img6.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img7.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img8.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img9.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img10.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img11.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img12.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+        </div>
+    </section>
+
+    <section class="carousel">
+
+        <h2 class="title">Originales:</h2>
+
+        <div class="carousel__container">
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="../img/img.jpg" alt="people" />
+  
+            <div class="carousel-item__details">
+              <div>
+                <img src="../Icon/play.svg" alt="Button play" />
+                <img src="../Icon/plus.svg" alt="Button plus" />
+              </div>
+  
+              <p class="carousel-item__details--title">Sahara</p>
+              <p class="carousel-item__details--subtitle">
+                Listennig the new Song: Sahara
+              </p>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <img class="carousel-item__img" src="../img/img1.jpg" alt="people" />
+  
+            <div class="carousel-item__details">
+              <div>
+                <img src="../Icon/play.svg" alt="Button play" />
+                <img src="../Icon/plus.svg" alt="Button plus" />
+              </div>
+  
+              <p class="carousel-item__details--title">Sahara</p>
+              <p class="carousel-item__details--subtitle">
+                Listennig the new Song: Sahara
+              </p>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img2.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img3.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img4.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img5.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img6.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img7.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img8.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img9.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img10.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img11.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item">
+              <img class="carousel-item__img" src="../img/img12.jpg" alt="people" />
+    
+              <div class="carousel-item__details">
+                <div>
+                  <img src="../Icon/play.svg" alt="Button play" />
+                  <img src="../Icon/plus.svg" alt="Button plus" />
+                </div>
+    
+                <p class="carousel-item__details--title">Sahara</p>
+                <p class="carousel-item__details--subtitle">
+                  Listennig the new Song: Sahara
+                </p>
+              </div>
+            </div>
+  
+        </div>
+      </section>
+
+    <footer class="footer">
+        <a href="/">T&eacute;rminos de uso</a>
+        <a href="/">Declaraci&oacute;n de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>  
+      
     
 </body>
 </html>
